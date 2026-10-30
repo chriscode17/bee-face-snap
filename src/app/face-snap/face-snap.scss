@@ -1,6 +1,6 @@
 .face-snap-card {
   box-sizing: border-box;
-  width: 50%;
+  width:40%;
   margin: 25px auto;
   padding: 10px 30px;
   box-shadow: lightgray 4px 4px 20px;
@@ -33,13 +33,13 @@
 }
 
 .snapped {
-  background-color: rgba(lightcoral, 0.4);
-  color: darkred;
+  background-color: rgba(lightpink, 0.4);
+  color :purple;
   button {
-    box-shadow: lightcoral 3px 3px 7px;
-    color: darkred;
+    box-shadow: lightpink 3px 3px 7px;
+    color: purple;
     &:active {
-      box-shadow: lightcoral 0 0 5px;
+      box-shadow: lightpink 0 0 5px;
     }
   }
 }

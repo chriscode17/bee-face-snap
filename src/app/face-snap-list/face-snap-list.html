@@ -1,0 +1,7 @@
+<!-- Facesnap0 qui est le type de mon objet mySnap est passser en attribut à mon composant face-snap pour que je puisse l'utiliser dans le template de ce composant. -->
+ <!-- l'attribut binding pour lier cet objet à la propriété personnalisée  FaceSnap0 -->
+@for (faceSnap of faceSnaps; track faceSnap.title) {
+  <app-face-snap [FaceSnap0]="faceSnap"/>
+}
+
+

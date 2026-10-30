@@ -1,0 +1,46 @@
+
+.Banner {
+  text-align: center;
+  font-weight: bolder;
+   margin-top: 15%;  
+}
+.lettre, .lettre span {
+  display: inline-block;
+}
+.Banner span {
+  cursor: pointer;
+  position: relative;
+  font-size: 250px;
+  perspective: 450px;
+}
+.lettre span::before,
+.lettre span::after {
+  position: absolute;
+  content: attr(data-letter);
+  inset: 0;
+  transform-origin: top left;
+}
+.lettre span::before {
+  transition: transform 0.4s ease-out;
+  color: rgba(0,0,0,0.122);
+
+}
+.lettre span::after {
+  color: red;
+  transition: 
+  transform 0.2s ease-out,
+  color 0.2s ease-out;
+  transform: rotateY(-10deg);
+}
+.lettre:hover span::after {
+  transform: rotateY(-60deg);
+}
+.lettre:hover span::before {
+  transform: scaleX(0.85) skewY(20deg);
+}
+
+.landing-links {
+  width: 100%;
+  text-align: center;
+  font-size: 50px;
+}
